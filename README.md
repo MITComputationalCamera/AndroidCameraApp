@@ -11,7 +11,9 @@ also use this link to reference any other methods you'd like to "Override" in th
 1. Make sure MinSDK is 11 (not 8) or 15 if you're working with Google Glass
 2. The 5 files you need to manipulate: MainActivity.java, SuperCamera.manifest, RohanCamHost.java, RohanCamFragment.java, and activity_main.xml
 3. Add the following permissions to your AndroidManifest (Allows us to use most of the functions of the CWAC library)
-```
+
+
+```xml
 <uses-permission android:name="android.permission.CAMERA"/>
 <uses-feature android:name="android.hardware.camera"/>
 <uses-feature android:name="android.hardware.camera.autofocus"/>
@@ -22,7 +24,9 @@ also use this link to reference any other methods you'd like to "Override" in th
 `android:largeHeap="true"`
 5. In your activity_main.xml layout file, change the RelativeLayout to a FrameLayout (this gives us the ability to overlay components on top of other compontents)
 6. If you want the viewfinder to take up the enitre screen, make sure you define the width/height of the elements to "fill_parent"
-```
+
+
+```xml
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
    xmlns:tools="http://schemas.android.com/tools"
    android:layout_width="fill_parent"
@@ -35,6 +39,7 @@ also use this link to reference any other methods you'd like to "Override" in th
             android:layout_height="fill_parent" />
 </FrameLayout>
 ```
+
 7. The android:name should reference whatever your app's name/path to the fragment file. E.g. My fragment class in my app (called SuperCamera) is called RohanCamFragment.java and thus I refer to it as com.example.supercamera.RohanCamFragment
 
 8. Most of the code you will need to modify will be in MainActivity.java (UI interaction and checks for camera) and RohanCamHost.java (set camera properties)
@@ -43,4 +48,6 @@ also use this link to reference any other methods you'd like to "Override" in th
 ***
 
 Using the code provided (and any additional libraries you'd like to use), create an Android app that does the following:
-Displays a viewfinder with the preview pane and a singular capture button
+1. Displays a viewfinder with the preview pane and a singular "Snap" or capture button
+2. Via a Dropdown bar or other setting component, allows you to change the preview filter between 3 different filters of your choice (e.g. use setColorEffect to change it to Mono)
+   -here you will have to create a method in your "CamHost" class (e.g. RohanCamHost) to change the parameters necessary and call adjustPreviewParameters to update properly. This will also require you to modify the inside of your adjustPreviewParameters method so that whatever we pass (Camera.Parameters parameters) is not overwritten by what's inside. There are multiple ways to do this.
