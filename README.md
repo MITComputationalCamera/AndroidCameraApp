@@ -46,8 +46,4 @@ also use this link to reference any other methods you'd like to "Override" in th
 
 ## Assignment
 ***
-
-Using the code provided (and any additional libraries you'd like to use), create an Android app that does the following:
-1. Displays a viewfinder with the preview pane and a singular "Snap" or capture button
-2. Via a Dropdown bar or other setting component, allows you to change the preview filter between 3 different filters of your choice (e.g. use setColorEffect to change it to Mono)
-   -here you will have to create a method in your "CamHost" class (e.g. RohanCamHost) to change the parameters necessary and call adjustPreviewParameters to update properly. This will also require you to modify the inside of your adjustPreviewParameters method so that whatever we pass (Camera.Parameters parameters) is not overwritten by what's inside. There are multiple ways to do this.
+To Be Posted by the end of this weekend.
