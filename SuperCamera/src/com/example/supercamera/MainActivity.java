@@ -63,7 +63,7 @@ public class MainActivity extends Activity {
 			public void onClick(View arg0) {
 
 				//***********MODIFY CODE HERE to take a picture but instead of the default behavior, save the file as a Bitmap (BMP) image
-				//***********You will need to modify the line below (takePicture) slightly to save a Bitmap file instead (see source here: https://github.com/commonsguy/cwac-camera/blob/master/src/com/commonsware/cwac/camera/CameraFragment.java)
+				//***********You will need ONLY to modify the line below (takePicture) slightly to save a Bitmap file instead (see source here: https://github.com/commonsguy/cwac-camera/blob/master/src/com/commonsware/cwac/camera/CameraFragment.java)
 				camerafragment.takePicture();
 				
 				
