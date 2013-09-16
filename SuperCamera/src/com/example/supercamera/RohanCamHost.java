@@ -155,7 +155,7 @@ public class RohanCamHost extends SimpleCameraHost {
 		
 		try {
 		       FileOutputStream out = new FileOutputStream(photo.getPath());
-		       bitmap.compress(Bitmap.CompressFormat.PNG, 90, out);
+		       bitmap.compress(Bitmap.CompressFormat.PNG, 90, out); //if you find that the image is poor in quality, adjust the "90" here to a different compression amount.
 		   	   out.close();
 		} catch (Exception e) {
 		       e.printStackTrace();
@@ -171,9 +171,9 @@ public class RohanCamHost extends SimpleCameraHost {
 		
 		//*************INSERT/MODIFY CODE HERE to change the brightness/contrast of the incoming bitmap image and then return it
 		//*************Feel free to use any resources on the Internet here to help guide you on how to 
-		//*************adjust the brightnes and contrast of Bitmap images using Android
+		//*************adjust the brightnes and contrast of Bitmap images in Java/Android. You may want to look into the "ColorMatrix" and "Paint" classes.
 		
-		return bmp;
+		return bmp; //return the new Bitmap image for us to save above
 	 
 	}
 
