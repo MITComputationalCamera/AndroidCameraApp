@@ -53,10 +53,10 @@ First, be sure to download the project above (download the zip or clone via GIT 
 Similar to CamScanner (https://play.google.com/store/apps/details?id=com.intsig.camscannerhd), you will be adjusting the properties of the camera (flash, scene, color effect),
 to take a picture of a printed word document, enhance the brightness/contrast of the image to look more like a scan (https://lh3.ggpht.com/jfjr64-6SZpeGOS74xgIGsMvnpCgPLwtCXjB2a9zo5X10Pv_4iZIMm7le1IzR_uYgj4=h900-rw), and save the image onto the device.
 
-The project above handles starting/stopping the camera for you and just requires you to change the camera parameters and create a method that modifies the brightness/contrast of the bitmap image.
+The project above handles starting/stopping the camera for you and just requires you to change the camera parameters (turn on the flash, macro mode, etc.) and create a method that modifies the brightness/contrast of the bitmap image. The "scan" method will trigger when you hit the "snap" button.
 
 As the code currently stands, it saves the images automatically in your phone's DCIM folder. I recommend using an app like ES File Explorer to view the images you've taken with the app (https://play.google.com/store/apps/details?id=com.estrongs.android.pop&hl=en)
 
 As always, feel free to use the vastness of the internet to your advantage here. All external libraries/code are acceptable -- just make sure you understand what you're implementing.
 
-You only need to modify the code indicated by the //*********** INSERT/MODIFY CODE HERE blocks.
+You only need to modify the code indicated by the `//*********** INSERT/MODIFY CODE HERE` blocks.
