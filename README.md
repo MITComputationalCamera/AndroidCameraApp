@@ -48,6 +48,8 @@ also use this link to reference any other methods you'd like to "Override" in th
 ***
 You will be modifying the code included in this repository to create a document scanner app!
 
+First, be sure to download the project above (download the zip or clone via GIT if you know how) and import the project into Eclipse.
+
 Similar to CamScanner (https://play.google.com/store/apps/details?id=com.intsig.camscannerhd), you will be adjusting the properties of the camera (flash, scene, color effect),
 to take a picture of a printed word document, enhance the brightness/contrast of the image to look more like a scan (https://lh3.ggpht.com/jfjr64-6SZpeGOS74xgIGsMvnpCgPLwtCXjB2a9zo5X10Pv_4iZIMm7le1IzR_uYgj4=h900-rw), and save the image onto the device.
 
